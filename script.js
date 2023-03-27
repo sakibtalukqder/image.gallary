@@ -1,32 +1,12 @@
-function Error(){
-  window.alert('Working on it, Try again letter. \nThank you.. :)');
-}
+//console.log('Java Script Exe');
 
-//Sidebar Open & Close
+let img_box = document.getElementById("lg-img");
+let img_button = document.getElementsByClassName("img-sm");
 
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-
-
-
-//--Dark-Theme
-
-
-function display() {
+function chenger(ActiveImage) {
+  img_box.src = ActiveImage.src;
   
-  let mode = document.getElementById("mode");
-  
-  document.body.classList.toggle("dark-thme");
-  if(document.body.classList.contains("dark-thme")){
-    mode.innerHTML='Lite';
+  if(img_box.contains(ActiveImage)){
+    img_button.style="opacity:1";
   }
-  else{
-    mode.innerHTML='dark';
-  }
-  
 }
